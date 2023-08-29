@@ -6,7 +6,7 @@ import edu.wctc.sales.iface.IShippingPolicy;
 public class FreeOverXShippingPolicy implements IShippingPolicy {
 
     private int x;
-    FreeOverXShippingPolicy(int x) {
+    public FreeOverXShippingPolicy(int x) {
         this.x = x;
     }
 
