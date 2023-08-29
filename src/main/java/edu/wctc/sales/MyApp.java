@@ -12,7 +12,6 @@ public class MyApp {
         context.register(AppConfig.class);
         context.refresh();
 
-        List<Sale> sales = ((ISalesInput)context.getBean("salesInput")).getSales();
-        ((ISalesReport)context.getBean("salesReport")).generateReport(sales);
+        ((SalesApp)context.getBean("salesApp")).generateSales();
     }
 }
